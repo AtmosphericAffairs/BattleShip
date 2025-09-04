@@ -2,8 +2,6 @@ import pygame
 import copy
 from position_ship import Position_ship
 import game_function as gf
-import random
-
 
 class Position_ship_Computer(Position_ship):
     def __init__(self, screen, copy_coords_ship_comp, coords_ship_comp, territory_computer, level):
