@@ -1,4 +1,3 @@
-import pygame
 import copy
 from position_ship import Position_ship
 import game_function as gf

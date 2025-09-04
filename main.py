@@ -5,7 +5,7 @@ from territory_computer import Territory_computer
 from territory_gamer import Territory_gamer
 from position_ship_gamer import Position_ship_gamer
 from position_ship_computer import Position_ship_Computer
-from mouse_click import mouse_click
+from event_handler import EventHandler
 from button import Button
 from shooting import Shoting
 from window_message import Window_message
@@ -40,7 +40,7 @@ def run_game():
         territory_gamer.fill_battle()
         position_ship_computer.position()
         position_ship_gamer.position()
-        mouse_click(position_ship_gamer, territory_gamer, button, position_ship_computer, position_ship_gamer, shoting, level)
+        EventHandler(position_ship_gamer, territory_gamer, button, position_ship_computer, position_ship_gamer, shoting, level)
         gf.change_of_list_coords(position_ship_gamer.copy_coords_ship)
         if level > 1:
                 shoting.shot_comp()

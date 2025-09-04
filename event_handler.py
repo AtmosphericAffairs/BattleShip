@@ -1,9 +1,8 @@
 import pygame
 import sys
 import game_function as gf
-import random
 
-def mouse_click(position_ship, territory_gamer, button, position_ship_computer, position_ship_gamer, shoting, level):
+def EventHandler(position_ship, territory_gamer, button, position_ship_computer, position_ship_gamer, shoting, level):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
